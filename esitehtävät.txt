@@ -1,0 +1,32 @@
+Backend
+-------
+
+Luo REST-rajapinta todo-ohjelmalle. Rajapinnan kautta tulee pystyä:
+- Luomaan, päivittämään ja poistamaan todo-kirjauksia
+- Listaamaan avoimet todot
+- Listaamaan valmiit todot
+
+Meillä backend-hommia tehdään Python+Django -kombolla. Toivoisimmekin, että käyttäisit näitä teknologioita tehtävän toteutuksessa. Voit käyttää myös lisäkirjastoja halutessasi.
+
+Tekoälytyökalujen käyttö on sallittu vain tiedonhakuun, ei koodin generointiin. Kirjoitathan koodin käsin.
+
+
+Frontend (Föli-rajapinta)
+-------------------------
+
+Turun seudun joukkoliikenteen reaaliaikainen pysäkkidata on saatavissa rajapinnasta, jonka kuvaus löytyy osoitteesta http://data.foli.fi/doc/siri/v0/sm Pähkinänkuoressa:
+
+- Jokaisella pysäkillä on numero ja nimi. Luettelo kaikista pysäkeistä löytyy osoitteesta http://data.foli.fi/siri/sm/
+- Pysäkin reaaliaikaiset saapumistiedot saa haettua pysäkkinumerolla, esim. http://data.foli.fi/siri/sm/164
+
+Luo Reactilla yksinkertainen pysäkkinäyttö, johon voi syöttää haluamansa pysäkkinumeron. Jos numerolla löytyy pysäkki, pysäkkinäyttö näyttää valitun pysäkin nimen sekä seuraavaksi saapuvista linja-autoista vähintään seuraavat tiedot:
+
+- Päätepysäkki (destinationdisplay)
+- Aikataulun mukainen saapumisaika
+- Onko auto etuajassa vai myöhässä ja kuinka paljon (minuutin tarkkuudella)
+
+Sovelluksen tulisi myös:
+- päivittää pysäkkidata joko automaattisesti tietyin aikavälein tai käyttäjän napista painamalla
+- antaa käyttäjän syöttää uusi pysäkkinumero ja päivittää tiedot siirtymättä pois pysäkin tiedoista
+
+Tekoälytyökalujen käyttö on sallittu vain tiedonhakuun, ei koodin generointiin. Kirjoitathan koodin käsin.
