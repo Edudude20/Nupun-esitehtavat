@@ -5,38 +5,35 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.table_component {
+  overflow: auto;
+  width: 100%;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.table_component table {
+  border: 1px solid #dededf;
+  height: 100%;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 1px;
+  text-align:center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.table_component caption {
+  caption-side: top;
+  text-align: left;
 }
 
-.card {
-  padding: 2em;
+.table_component th {
+  border: 1px solid #000000;
+  background-color: #ffcc00;
+  color: #000000;
+  padding: 5px;
 }
 
-.read-the-docs {
-  color: #888;
+.table_component td {
+  border: 1px solid #dededf;
+  color: #ffffff;
+  padding: 5px;
 }
